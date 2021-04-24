@@ -153,7 +153,7 @@ export default {
         this.btnCondition = "normal";
       }
       this.$http
-        .post("https://45.76.166.241:8080/api/v1/getAddress", {
+        .post("http://45.76.166.241:8080/api/v1/getAddress", {
           seed: this.seed,
         })
         .then(function (data) {
