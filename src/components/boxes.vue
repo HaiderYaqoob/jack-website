@@ -68,6 +68,7 @@
               </button>
             </h1>
           </div>
+          http://45.76.166.241:8080/api/v1/wallet/addr1q8zk0a8p0darg2m4whzve5fry595tmahqd6jgzt9chr2ay79vl6wz7m6xs4h2awyengjxfgtghhmwqm4ysykt3wx46fs2wwd4g/balance
         </div>
       </div>
       <div class="box">
@@ -152,7 +153,7 @@ export default {
         this.btnCondition = "normal";
       }
       this.$http
-        .post("http://45.76.166.241:8080/api/v1/getAddress", {
+        .post("https://45.76.166.241:8080/api/v1/getAddress", {
           seed: this.seed,
         })
         .then(function (data) {
